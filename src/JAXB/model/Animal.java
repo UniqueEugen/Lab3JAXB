@@ -1,10 +1,15 @@
-package animalsXML;
+package JAXB.model;
 
 import myLibrary.console.Console;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import java.util.UUID;
 
-public class Entity {
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
+public class Animal {
     private UUID id;
     private String type;
     private double price;
@@ -12,6 +17,15 @@ public class Entity {
     private String description;
     private String subspecies;
 
+    public Animal(){}
+    public Animal(String type, String subspecies, String kind, double price, String description, UUID id){
+        this.type=type;
+        this.description=description;
+        this.price = price;
+        this.kind=kind;
+        this.subspecies=subspecies;
+        this.id = id;
+    }
     public String getType() {
         return type;
     }
@@ -37,7 +51,7 @@ public class Entity {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description.replaceAll("`","\n");
     }
 
     public void setKind(String kind) {

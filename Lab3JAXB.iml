@@ -7,6 +7,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="MyLibrary" level="project" />
+    <orderEntry type="library" exported="" name="MyLibrary" level="project" />
+    <orderEntry type="library" exported="" name="jaxb-api-2.3.1" level="project" />
+    <orderEntry type="library" exported="" name="jakarta.xml.bind-api-4.0.1" level="project" />
+    <orderEntry type="library" exported="" name="jaxb-runtime-4.0.3" level="project" />
+    <orderEntry type="library" exported="" name="jaxb-core-4.0.3" level="project" />
+    <orderEntry type="library" exported="" name="istack-commons-runtime-4.1.1" level="project" />
+    <orderEntry type="library" name="jakarta.activation-api-2.1.2" level="project" />
   </component>
 </module>
